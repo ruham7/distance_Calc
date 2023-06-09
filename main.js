@@ -55,7 +55,7 @@ function calcRoute() {
       //Get distance and time
       const output = document.querySelector("#output");
       output.innerHTML =
-        "<div class='alert-info'>From: " +
+        "<div class='alert-info text-gray'>From: " +
         document.getElementById("from").value +
         ".<br />To: " +
         document.getElementById("to").value +
@@ -79,3 +79,12 @@ function calcRoute() {
     }
   });
 }
+//border-bottom animation maybe?
+const input = document.querySelector(".animated-input");
+input.addEventListener("focus", () => {
+  input.classList.add("focused");
+});
+
+input.addEventListener("blur", () => {
+  input.classList.remove("focused");
+});
