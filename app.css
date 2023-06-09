@@ -15,7 +15,7 @@
  
   /*output box*/
   #output {
-    color: rgb(55, 54, 54);
+    color: #d1d5db;
     text-align: center;
     font-size: 1em;
     margin: 20px auto;
@@ -26,6 +26,7 @@
   .text-gray{
     color: #d1d5db;
     caret-color: #d1d5db;
+    font-weight: 300;
   }
   .btn-orange{
     background-color: #26c7bd ;
@@ -34,6 +35,9 @@
     /* border: 2px solid #F46524; */
    
     /* input border animation */
+  }
+  .btn-orange:hover{
+    background-color: #34e6da;
   }
   input.transparent-input{
     background-color:transparent !important;
